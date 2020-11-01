@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <title>Frontend Mentor | FAQ Accordion Card</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <section class="image">
+            <img class="image__woman" src="images/illustration-woman-online-mobile2.svg" alt="Ilustração de uma mulher online">
+
+            <img class="image__shadow"src="images/bg-pattern-mobile.svg" alt="Ilustração de sombra">      
+        </section>
+        
+        <section class="FAQ">
+            <h1>FAQ</h1>
+            
+            <div class="FAQ__divider" id="FAQ_1" onclick="openAnswer_1()">
+                <div class="FAQ__qnarrow"> 
+                    <p class=FAQ__qnarrow__question id="FAQ_question_1"> How many team members can I invite? </p>
+                    <div class="FAQ__qnarrow__arrow" id="FAQ_arrow_1">
+                        <img src="images/icon-arrow-down.svg" alt="Ilustração de seta para baixo">
+                    </div>
+                </div>    
+            
+                <p class="FAQ__answer" id="FAQ_answer_1"> You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan. </p>
+            </div>
+
+            <div class="FAQ__divider" id="FAQ_2" onclick="openAnswer_2()">
+                <div class="FAQ__qnarrow">
+                    <p class=FAQ__qnarrow__question id="FAQ_question_2"> What is the maximum file upload size? </p>
+                    <div class="FAQ__qnarrow__arrow" id="FAQ_arrow_2">    
+                        <img src="images/icon-arrow-down.svg" alt="Ilustração de seta para baixo">
+                    </div>
+                </div> 
+            
+                <p class="FAQ__answer" id="FAQ_answer_2"> No more than 2GB. All files in your account must fit your allotted storage space. </p>
+            </div>
+            
+            <div class="FAQ__divider" id="FAQ_3" onclick="openAnswer_3()">
+                <div class="FAQ__qnarrow">
+                    <p class=FAQ__qnarrow__question id="FAQ_question_3"> How do I reset my password? </p>
+                    <div class="FAQ__qnarrow__arrow" id="FAQ_arrow_3">
+                        <img src="images/icon-arrow-down.svg" alt="Ilustração de seta para baixo">
+                    </div>  
+                </div>  
+            
+                <p class="FAQ__answer" id="FAQ_answer_3"> Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you. </p>
+            </div>
+
+            <div class="FAQ__divider" id="FAQ_4" onclick="openAnswer_4()">
+                <div class="FAQ__qnarrow">   
+                    <p class=FAQ__qnarrow__question id="FAQ_question_4"> Can I cancel my subscription? </p>
+                    <div class="FAQ__qnarrow__arrow" id="FAQ_arrow_4">
+                        <img src="images/icon-arrow-down.svg" alt="Ilustração de seta para baixo">
+                    </div>  
+                </div> 
+            
+                <p class="FAQ__answer" id="FAQ_answer_4"> Yes! Send us a message and we’ll process your request no questions asked. </p>
+            </div>
+            
+            <div class="FAQ__divider" id="FAQ_5" onclick="openAnswer_5()">
+                <div class="FAQ__qnarrow">
+                    <p class=FAQ__qnarrow__question id="FAQ_question_5"> Do you provide additional support? </p>
+                    <div class="FAQ__qnarrow__arrow" id="FAQ_arrow_5">  
+                        <img src="images/icon-arrow-down.svg" alt="Ilustração de seta para baixo">
+                    </div>
+                </div> 
+            
+                <p class="FAQ__answer" id="FAQ_answer_5">Chat and email support is available 24/7. Phone lines are open during normal business hours. </p>
+            </div>
+
+            <div class="ending_space_FAQ"> </div>
+        </section>
+    </body>
+
+    <script src="scripts.js"></script>
+</html>

@@ -1,0 +1,211 @@
+/* =============================================================
+TAVBLE OF CONTENT: 
+    1) TEXT (WITHOUT FUNCTIONS)
+    2) STRUCTURE
+    3) FUNCTIONS  AND TRANSITIONS
+============================================================= */
+
+
+
+/* 1) TEXT (WITHOUT FUNCTIONS)
+============================================================= */
+
+h1, p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 100%;
+    line-height: 135%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
+
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;    /* Obs.: The briefing asked for 12px font, but it was not good UX */
+}
+
+.FAQ__qnarrow__question {
+    font-weight: 500; /* Obs.: The briefing didnt included a 500 font, but to diferentiate the question and the answer I introduced it */
+    color: hsl(237, 12%, 33%);
+    }
+    
+.FAQ__answer {
+    font-weight: 400;
+    color: hsla(240, 6%, 50%);
+}
+
+/* 2) STRUCTURE    ============================================================= */
+
+body {
+    margin: 0;
+
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+    padding-top: 155px;
+    padding-bottom: 75px;
+}
+
+@media screen and (max-width: 319px) {
+    body {
+        padding-top: 40px;
+    }
+}
+
+.image {
+    position: absolute;
+    top: 47.5px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media screen and (max-width: 319px) {
+    .image {
+        display: none;
+    }
+}
+
+.image__woman {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.image__shadow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translate(0px, -85px);
+}
+
+.FAQ {
+    background-color: white;
+
+    border-style: solid;
+    border-color: thistle;
+    border-width: 1px;
+    border-radius: 32px;
+    
+    box-shadow: 10px 30px 30px hsla(240, 41%, 31%, 0.349);
+
+    margin: auto;
+
+    padding: 140px 0 20px;
+}
+
+@media screen and (min-width: 683px) {
+    .FAQ {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 682px) {
+    .FAQ {
+        max-width: 88%;
+    }
+}
+@media screen and (max-width: 319px) {
+    .FAQ {
+        padding-top: 40px;
+    }
+}
+
+.FAQ h1 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.FAQ__divider {
+    border-color: hsl(240, 5%, 91%);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin: 0 7.5%;
+
+}
+
+.FAQ__qnarrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .FAQ__qnarrow__question {
+    } */
+
+
+.FAQ__qnarrow__arrow {
+    margin-left: 1rem;
+
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    transform: scale(+1.25);
+}
+
+.FAQ__answer {
+    margin: 0;
+    padding-bottom: 7.5px;
+
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 426px) {
+    .FAQ__qnarrow__question, .FAQ__answer {
+        max-width: 92.5%;
+    }
+}
+
+.ending_space_FAQ {
+    min-height: 32px;
+}
+
+/* 3) FUNCTIONS  AND TRANSITIONS  ============================================================= */
+
+#FAQ_1.on, #FAQ_2.on, #FAQ_3.on, #FAQ_4.on,#FAQ_5.on {
+    margin: 2.5% 7.5% 0%;
+
+    transition-duration: 300ms;
+}
+#FAQ_1, #FAQ_2, #FAQ_3, #FAQ_4,#FAQ_5 {
+    transition-duration: 300ms;
+}
+
+
+#FAQ_arrow_1.on, #FAQ_arrow_2.on, #FAQ_arrow_3.on, #FAQ_arrow_4.on, #FAQ_arrow_5.on {
+    transform: scale(-1.75);
+    
+    transition-duration: 300ms;
+}
+#FAQ_arrow_1, #FAQ_arrow_2, #FAQ_arrow_3, #FAQ_arrow_4, #FAQ_arrow_5 {
+    transition-duration: 300ms;
+}
+
+
+#FAQ_question_1.on, #FAQ_question_2.on, #FAQ_question_3.on, #FAQ_question_4.on, #FAQ_question_5.on {
+    font-weight: bold;
+    color: hsl(238, 29%, 16%);
+
+    transition-duration: 300ms;
+}
+#FAQ_question_1, #FAQ_question_2, #FAQ_question_3, #FAQ_question_4, #FAQ_question_5 {
+    transition-duration: 300ms;
+}
+
+#FAQ_answer_1.on, #FAQ_answer_2.on, #FAQ_answer_3.on, #FAQ_answer_4.on, #FAQ_answer_5.on {
+    display: block;
+    visibility: visible;
+
+    padding-bottom: 0;
+    margin-bottom: 5%;
+
+    transition-duration: 300ms;
+}
+#FAQ_answer_1, #FAQ_answer_2, #FAQ_answer_3, #FAQ_answer_4, #FAQ_answer_5 {
+    transition-duration: 300ms;
+}
