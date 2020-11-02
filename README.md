@@ -12,6 +12,6 @@
 
 # Next Steps / Can do Better Next Time
 * Use CSS reset and normalize from the starting of the project.
-* Use rem units for everything instead of px.
+* Use rem and px units better.
 * Do the scripts with less code;
 * Make the answer box have a padding equal to the arrow, in order dont let it get below the arrow (it is corrected for screens wider than 425px);
