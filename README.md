@@ -4,13 +4,14 @@
 * Challenge Link: https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam
 
 # Lessons Learned
-* I learn a lot about UX and responsiveness;
 * I sharpened my CSS overall skills;
+* I learn a lot about UX and responsiveness;
 * The image on top of the FAQ box was an interesting challenge to learn about CSS position;
 * It reinforced my knowledge about Javascript for front end.
 * Corrected the "empty space in the end of the page" bug in tablets, adding: html {min-height: 100%}.
 
 # Next Steps / Can do Better Next Time
+* Use CSS reset and normalize from the starting of the project.
+* Use rem units for everything instead of px.
 * Do the scripts with less code;
 * Make the answer box have a padding equal to the arrow, in order dont let it get below the arrow (it is corrected for screens wider than 425px);
-* Use CSS reset and normalize from the starting of the project.
